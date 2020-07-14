@@ -57,11 +57,13 @@ app.get('/', function (req, res) {
   ].join('\n');
 
   res.header("Content-Type", 'text/html');
-  res.status(200).send(view);
+  //res.status(200).send(view);
+  res.status(200).send(req.webtaskContext.data.EXTENSION_SECRET);
 });
 
 // This endpoint would be called by webtask-gallery to dicover your metadata
 app.get('/meta', function (req, res) {
+  metadata.EXTENSION_SECRET = req.webtaskContext.data.EXTENSION_SECRET;
   res.status(200).send(metadata);
 });
 
