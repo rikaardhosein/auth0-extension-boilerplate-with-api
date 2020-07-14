@@ -5,7 +5,7 @@
   "author": "auth0",
   "description": "This is a Hello World extension",
   "type": "application",
-  "repository": "https://github.com/auth0/auth0-extension-boilerplate-with-api",
+  "repository": "https://github.com/rikaardhosein/auth0-extension-boilerplate-with-api",
   "keywords": [
     "auth0",
     "extension"
